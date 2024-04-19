@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+section{
+    min-width: 430px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 16px;
+    box-shadow: 0px 6px 15px 1px rgba(128, 128, 128, 0.535);
+}
+
+form{
+    margin: 15px;
+}
+
+.tittle{
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-left: 6px;
+    font-size: 20px;
+}
+
+.error-txt{
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: rgba(182, 74, 74, 0.624);
+    color: rgb(241, 0, 0);
+    padding: 6px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* ---------------field style----------- */
+.name-details{
+    display: flex;
+}
+.name-details .field{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    white-space: nowrap;
+    margin: 0;
+}
+.name-details label{
+    margin-bottom: 5px;
+}
+.name-details input{
+    width: 100%;
+}
+
+.field{
+    width: 100%;
+    display: flex;
+    padding: 4px;
+    margin: 8px 0;
+}
+
+.field label{
+    padding-right: 8px;
+    font-size: 17px;
+    width: 36%;
+    user-select: none;
+}
+.field input{
+    border: 1px solid rgba(87, 87, 87, 0.785);
+    border-radius: 4px;
+    font-size: 18px;
+    padding: 3px 0 3px 6px;
+}
+.user-details .field i{
+    position: relative;
+    top: 6px;
+    right: 25px;
+    color: rgba(62, 60, 57, 0.318);
+}
+.user-details .field i.active{
+    color: rgba(18, 9, 9, 0.817);
+}
+
+/*-------- chosse file style ---------*/
+.img label{
+    font-size: 16px;
+    width: 70%;
+}
+.img input{
+    border: none;
+    font-size: 15px;
+}
+
+/* -----------button style-----------*/
+.button{
+    display: flex;
+    justify-content: center;
+    margin: 8px 
+}
+.button input{
+    width: 90%;
+    padding: 8px 0;
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.808);
+    border: 1px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    background: rgba(13, 13, 13, 0.871);
+}
+.button input:hover{
+    background: rgba(13, 13, 13, 0.222);
+    color: rgba(84, 41, 185, 0.808);
+    border-color: black;
+}
+.button input:active{
+    background: rgba(17, 117, 34, 0.808);
+    color: rgba(253, 253, 11, 0.935);
+    border: 1px solid transparent;
+}
+
+/* login hyperlink */
+.sign{
+    display: flex;
+    justify-content: center;
+    margin: 22px 0;
+    font-size: 18px;
+}
+.sign p{
+    margin-right: 5px;
+}
+.sign a{
+    text-decoration-line: none;
+    color: rgb(208, 145, 11);
+}
+
+/* -------------userpage------------- */
+
+.chat-wrapper section{
+    width: 480px;
+}
+
+.content .status,
+.content header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px;
+}
+.content .status span{
+    font-size: 22px;
+}
+.chat-wrapper .content header a,
+.chat-page .content header .logout{
+    text-decoration-line: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 6px;
+    margin-right: 6px;
+    background: rgba(6, 6, 6, 0.915);
+    color: aliceblue;
+}
+
+.content img{
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 25px;
+    margin-right: 8px;
+}
+
+.search{
+    margin: 10px 5px;
+    display: flex;
+}
+.search input{
+    width: 88%;
+    font-size: 20px;
+    padding: 5px;
+}
+.search i{
+    border: 1px solid rgba(60, 60, 60, 0.974);
+    border-radius: 1px 5px 5px 1px;
+    padding: 8px;
+    cursor: pointer;
+    color: rgba(15, 3, 140, 0.941);
+    font-size: 20px;
+}
+
+/*--------friend list---------*/
+.friend-list a{
+    margin-bottom: 3px;
+    border: 1px solid transparent;
+    border-bottom-color: rgba(128, 128, 128, 0.235);
+}
+.friend-list{
+    margin-top: 5px;
+    min-height: 300px;
+    max-height: 370px;
+    overflow-y: auto;
+}
+.friend-list::-webkit-scrollbar{
+    width: 0;
+}
+
+.friend-list a,
+.friend-list .content{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 5px 7px 5px;
+    align-items: center;
+    text-decoration-line: none;
+}
+.friend-list .user-details{
+    font-size: 14px;
+    margin-left: 8px;
+}
+.friend-list span{
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+}
+.friend-list p{
+    color: rgba(93, 91, 91, 0.842);
+}
+.friend-list .status-dot{
+    color: rgb(37, 208, 37);
+    margin-right: 10px;
+    font-size: 10px;
+}
+.friend-list .status-dot.offline{
+    color: rgb(169, 168, 168);
+}
+
+.friend-list img{
+    width: 34px;
+    height: 34px;
+    border: 1px solid greenyellow;
+    border-radius: 20px;
+}
+
+/* -------------- chat page ---------------- */
+
+.chat-page .content{
+    height: 480px;
+}
+.chat-page header .left i{
+    font-size: 19px;
+}
+.chat-page header .left,
+.chat-page header{
+    display: flex;
+    align-items: center;
+    margin: 13px 3px;
+    border-bottom-color: rgb(30, 197, 197);
+}
+.chat-page .left i{
+    margin: 0 8px;
+}
+
+.chat-area{
+    height: 340px;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+.msg{
+    display: flex;
+}
+.msg .details{
+    max-width: 290px;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+.chat-area .incoming .details{
+    margin: 0 8px 8px auto;
+    padding: 3px 6px;
+    border: 1px solid transparent;
+    border-radius: 12px 12px 0 12px;
+    background: rgb(17, 182, 23);
+    color: antiquewhite;
+}
+.chat-area .outgoing{
+    display: flex;
+    align-items: center;
+    margin: 0 auto 8px 8px;
+}
+.chat-area .outgoing .details{
+    background: rgba(128, 128, 128, 0.245);
+    padding: 3px 6px;
+    border: 1px solid transparent;
+    border-radius: 12px 12px 12px 0;
+}
+
+.send-message{
+    position: relative;
+    top: -8px;
+    right: -4px;
+}
+.send-message .type-area{
+    height: 29px;
+    width: 85%;
+    border: 1px solid gray;
+    outline-color: rgba(71, 71, 71, 0.808);
+    border-radius: 3px;
+    padding: 3px 7px;
+    font-size: 16px;
+}
+.send-message .send-button{
+    height: 28px;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 16px;
+    background: rgb(84, 136, 6);
+    border: 1px solid rgba(139, 227, 7, 0.915);
+    border-radius: 3px;
+    cursor: pointer;
+}
